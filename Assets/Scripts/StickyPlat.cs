@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class StickyPlat : MonoBehaviour
 {
+     void Start () {
+    Debug.Log("Hello");
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Player")
