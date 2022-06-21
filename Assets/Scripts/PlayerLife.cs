@@ -23,7 +23,7 @@ public class PlayerLife : MonoBehaviour
     GetComponent<Rigidbody>().isKinematic=true;
     GetComponent<PlayerMovement>().enabled=false;
     ReloadLevel();
-/*
+
    }
 
    void ReloadLevel()
@@ -31,4 +31,3 @@ public class PlayerLife : MonoBehaviour
       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
    }
 }
-*/
