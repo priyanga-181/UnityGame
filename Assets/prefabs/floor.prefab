@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 444973312563187018}
   - component: {fileID: 444973312563187017}
   - component: {fileID: 444973312563187016}
-  - component: {fileID: 9096974543888773374}
+  - component: {fileID: 8699997046445349851}
+  - component: {fileID: 8770314709860171385}
   m_Layer: 6
   m_Name: floor
   m_TagString: Untagged
@@ -96,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9096974543888773374
+--- !u!114 &8699997046445349851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,6 +106,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 444973312563187127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 175cb6ddd1358994da5fa67b58374dc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d0eecaeaf1685f4a9f7746d1f35358c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8770314709860171385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444973312563187127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14574845162a88241a63745f89e4cbd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  speed: 1
