@@ -6,10 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
     public float movementSpeed=6f;
-    public float jumpForce=5f;
+    public float jumpForce=20f;
     
     public Transform groundCheck;
     public LayerMask ground;
+  //collectionSound
+    public AudioSource jumpSound;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
        {
          rb.velocity= new Vector3(rb.velocity.x,jumpForce,rb.velocity.z);
+         jumpSound.Play();
         }
     
      private void OnCollisionEnter(Collision collision)

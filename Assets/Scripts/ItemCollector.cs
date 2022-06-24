@@ -7,6 +7,8 @@ public class ItemCollector : MonoBehaviour
 {
     int coins=0;
     public Text coinsText;
+    public AudioSource coinSound;
+
 void Start () {
     
 }
@@ -18,6 +20,7 @@ void Start () {
         Destroy(other.gameObject);
         coins++;
         coinsText.text="Coins: " +coins;
+        coinSound.Play();
     }
 }
 

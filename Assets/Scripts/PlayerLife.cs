@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
+    public AudioSource deathSound;
     bool dead = false;
     void Start()
     {
@@ -33,6 +34,7 @@ public class PlayerLife : MonoBehaviour
   
     Invoke(nameof(ReloadLevel), 1.3f);
     dead=true;
+    deathSound.Play();
    }
 
    void ReloadLevel()
